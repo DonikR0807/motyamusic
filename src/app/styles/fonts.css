@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Quicksand-Regular";
+    src: local("Quicksand-Regular"),
+      local("Quicksand Regular"),
+      url("../../shared/assets/fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("../../shared/assets/fonts/Quicksand-Regular.woff") format("woff"),
+    url("../../shared/assets/fonts/Quicksand-Regular.ttf") format("ttf");
+  }
+  
+  @font-face {
+    font-family: "Quicksand-Bold";
+    src: local("Quicksand-Bold"),
+      local("Quicksand Bold"),
+      url("../../shared/assets/fonts/Quicksand-Bold") format("woff2"),
+    url("../../shared/assets/fonts/Quicksand-Bold.woff") format("woff"),
+    url("../../shared/assets/fonts/Quicksand-Bold.woff2") format("ttf");
+  }
+  
+  @font-face {
+    font-family: "Quicksand-SemiBold";
+    src: local("Quicksand-SemiBold"),
+      local("Quicksand SemiBold"),
+      url("../../shared/assets/fonts/Quicksand-SemiBold") format("woff2"),
+    url("../../shared/assets/fonts/Quicksand-SemiBold.woff") format("woff"),
+    url("../../shared/assets/fonts/Quicksand-SemiBold.woff2") format("ttf");
+  }
+  
