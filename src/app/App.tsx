@@ -1,8 +1,6 @@
-import { AppRouter } from './router';
+import { Providers } from './providers/ui/Providers';
 import './styles/index.css';
 
 export const App = () => {
-  return (
-    <AppRouter></AppRouter>
-  )
-}
+  return <Providers></Providers>;
+};

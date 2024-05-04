@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url(./fonts.css);
+@layer base {
+    @import url(./fonts.css);
+}

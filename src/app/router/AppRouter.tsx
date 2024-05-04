@@ -1,8 +1,9 @@
-import React from 'react';
 import {
+  Route,
   RouteObject,
   RouterProvider,
   createBrowserRouter,
+  createRoutesFromElements,
 } from 'react-router-dom';
 import { AppRoutes, RoutePath } from '../../shared/lib';
 import { MainPage } from '../../pages/main/ui/MainPage';
@@ -11,6 +12,7 @@ import { ProfilePage } from '../../pages/profile';
 import { SigninPage } from '../../pages/signin';
 import { SignupPage } from '../../pages/signup';
 import { NotFoundPage } from '../../pages/notFound';
+import { Layout } from '../layout/Layout';
 
 const routeConfig: Record<AppRoutes, RouteObject> = {
   [AppRoutes.MAIN]: {
@@ -39,7 +41,15 @@ const routeConfig: Record<AppRoutes, RouteObject> = {
   },
 };
 
-const router = createBrowserRouter(Object.values(routeConfig));
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route element={<Layout />}>
+      {Object.values(routeConfig).map(({ element, path }) => (
+        <Route element={element} path={path} key={path}></Route>
+      ))}
+    </Route>,
+  ),
+);
 
 export const AppRouter = () => {
   return <RouterProvider router={router}></RouterProvider>;
