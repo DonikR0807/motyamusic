@@ -7,13 +7,13 @@ export default {
     extend: {
       colors: {
         darkMain: '#1D2123',
-        darkAlt: '#1A1E1F',
-        darkText: '#FFFFFF',
-        darkAltText: '#EFEEE0',
-        lightMain: '#fffdfc',
+        darkAlt: '#1A1E1F', // background для всяких карточек
+        darkText: '#ffffff', //для текста в темной теме
+        darkAltText: '#EFEEE0', // для заголовков в темной теме
+        lightMain: '#fffdfc', 
         lightAlt: '#dadcd2',
-        lightText: '#00000',
-        lightAltText: '#03080a',
+        lightText: '#000000',
+        lightAltText: '#03080a', 
         yellowPrimary: '#FACD66',
         altText: '#A4C7C6',
       },

@@ -5,3 +5,9 @@
 @layer base {
     @import url(./fonts.css);
 }
+
+@layer components {
+    .btn-primary {
+        @apply border-yellowPrimary shadow-lg shadow-yellowPrimary
+    }
+}
