@@ -1,12 +1,20 @@
 import { Outlet } from 'react-router-dom';
 import { Header } from '../../widgets/header';
+import { Navigation } from '../../widgets/navigation';
 
 export const Layout = () => {
   return (
-    <div className="bg-lightMain px-8 dark:bg-darkMain relative">
-      <div className="box-border h-screen max-w-screen-2xl mx-auto">
+    <div className="relative bg-lightMain px-8 dark:bg-darkMain">
+      <div className="mx-auto box-border h-screen max-w-screen-2xl">
         <Header></Header>
-        <Outlet></Outlet>
+        <main className="flex gap-5 mt-10">
+          <div className="w-[62px]">
+            <Navigation></Navigation>
+          </div>
+          <div className="grow">
+            <Outlet></Outlet>
+          </div>
+        </main>
       </div>
     </div>
   );
