@@ -13,6 +13,8 @@ import { SigninPage } from '../../pages/signin';
 import { SignupPage } from '../../pages/signup';
 import { NotFoundPage } from '../../pages/notFound';
 import { Layout } from '../layout/Layout';
+import { PlayListsPage } from '../../pages/playlists';
+import { LikedPage } from '../../pages/liked';
 
 const routeConfig: Record<AppRoutes, RouteObject> = {
   [AppRoutes.MAIN]: {
@@ -34,6 +36,14 @@ const routeConfig: Record<AppRoutes, RouteObject> = {
   [AppRoutes.SIGN_UP]: {
     path: RoutePath.sign_up,
     element: <SignupPage></SignupPage>,
+  },
+  [AppRoutes.PLAYLISTS]: {
+    path: RoutePath.playlists,
+    element: <PlayListsPage></PlayListsPage>
+  },
+  [AppRoutes.LIKED]: {
+    path: RoutePath.liked,
+    element: <LikedPage></LikedPage>
   },
   [AppRoutes.NOT_FOUND]: {
     path: RoutePath.not_found,

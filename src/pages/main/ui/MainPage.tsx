@@ -1,13 +1,13 @@
 import React from 'react';
-import { Navigation } from '../../../widgets/navigation';
+import { PlayListSlide } from '../../../entities/playlist/';
 
 export const MainPage = () => {
   return (
-    <main className="flex gap-5">
-      <div className="w-[62px]">
-        <Navigation></Navigation>
+    <div className='flex'>
+      <div className="grow rounded-[40px] bg-lightAlt dark:bg-darkAlt">
+        <PlayListSlide></PlayListSlide>
       </div>
       <div className="grow"></div>
-    </main>
+    </div>
   );
 };
