@@ -10,4 +10,11 @@
     .btn-primary {
         @apply border-yellowPrimary shadow-lg shadow-yellowPrimary
     }
+    .sectionHeader {
+        @apply mb-4 font-quicksandBold text-2xl text-lightText dark:text-darkText
+    }
+
+    .card {
+        @apply bg-lightAlt dark:bg-darkAlt dark:hover:bg-darkText/25 hover:bg-lightText/25 transition-colors cursor-pointer
+    }
 }

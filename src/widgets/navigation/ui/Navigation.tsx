@@ -7,7 +7,7 @@ import LogoutIcon from '../../../shared/assets/images/logout.svg?react';
 
 export const Navigation = () => {
   return (
-    <div className="bg-lightAlt box-border w-[100%] p-6 dark:bg-darkAlt rounded-full">
+    <div className="bg-lightAlt box-border w-[100%] p-6 dark:bg-darkAlt rounded-full mt-12">
       <nav>
         <ul className="flex flex-col gap-6 items-center">
           <li>
