@@ -7,7 +7,7 @@ export const Layout = () => {
     <div className="relative bg-lightMain px-8 dark:bg-darkMain min-h-screen">
       <div className="mx-auto box-border max-w-screen-2xl">
         <Header></Header>
-        <main className="flex gap-5 mt-10 pt-12">
+        <main className="flex gap-9 mt-10 pt-12">
           <div className="w-[62px]">
             <Navigation></Navigation>
           </div>

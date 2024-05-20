@@ -1,0 +1,1 @@
+export { AddToCollectionBtn } from "./ui/AddToCollectionBtn";
