@@ -10,11 +10,30 @@
     .btn-primary {
         @apply border-yellowPrimary shadow-lg shadow-yellowPrimary
     }
+
     .sectionHeader {
         @apply mb-4 font-quicksandBold text-2xl text-lightText dark:text-darkText
     }
 
     .card {
         @apply bg-lightAlt dark:bg-darkAlt dark:hover:bg-darkText/25 hover:bg-lightText/25 transition-colors cursor-pointer
+    }
+
+    .baseBtn {
+        @apply dark:text-darkText text-lightText rounded-3xl p-3 transition-colors  disabled:opacity-75
+         font-quicksandRegular text-sm flex gap-2 items-center;
+    }
+
+    .text {
+        @apply dark:enabled:hover:bg-[rgba(255,_255,_255,_0.07)] hover:enabled:bg-[rgba(0,_0,_0,_0.07)] backdrop-blur-md;
+    }
+
+    .contained {
+        @apply dark:bg-[rgba(255,_255,_255,_0.07)] dark:enabled:hover:bg-[rgba(255,_255,_255,_0.25)] bg-[rgba(0,_0,_0,_0.07)] hover:enabled:bg-[rgba(0,_0,_0,_0.25)] backdrop-blur-md
+    }
+
+    .outlined {
+        @apply border-2 border-lightText/50
+        dark:border-darkText/25 dark:enabled:hover:bg-[rgba(255,_255,_255,_0.07)] hover:enabled:bg-[rgba(0,_0,_0,_0.07)] backdrop-blur-md
     }
 }
