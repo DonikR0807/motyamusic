@@ -1,31 +1,32 @@
-import React from 'react';
 import { PlayListCard, PlayListSlide } from '../../../entities/playlist/';
-import { SongCard } from '../../../widgets/song';
+import { SongList } from '../../../widgets/song/ui/SongList';
 
 export const MainPage = () => {
   return (
     <div>
       <section className="flex gap-6">
-        <div className="mt-12 grow self-start">
+        <div className="grow self-start">
           <PlayListSlide></PlayListSlide>
         </div>
         <div className="grow">
           <h2 className="sectionHeader">Top releases</h2>
           <div className="flex flex-col gap-4">
-            <SongCard></SongCard>
-            <SongCard></SongCard>
-            <SongCard></SongCard>
+            <SongList></SongList>
           </div>
         </div>
       </section>
-      <section>
+      <section className='mt-6'>
         <h2 className="sectionHeader">New releases</h2>
-        <ul className="flex gap-4">
+        <div className="flex gap-4">
           <PlayListCard></PlayListCard>
           <PlayListCard></PlayListCard>
           <PlayListCard></PlayListCard>
           <PlayListCard></PlayListCard>
-        </ul>
+        </div>
+      </section>
+      <section className='mt-6'>
+        <h2 className='sectionHeader'>Newest Songs</h2>
+        <SongList></SongList>
       </section>
     </div>
   );
