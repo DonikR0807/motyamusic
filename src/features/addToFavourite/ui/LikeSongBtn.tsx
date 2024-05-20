@@ -1,4 +1,3 @@
-import React from 'react';
 import LikeIcon from '../../../shared/assets/images/like.svg?react';
 
 export const LikeSongBtn = () => {
