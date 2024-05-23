@@ -42,7 +42,7 @@ export const Button = ({
   ) : (
     <>
       {icon && iconPosition === 'before' && icon}
-      {text && <span>{text}</span>}
+      {text && text}
       {icon && iconPosition === 'after' && icon}
     </>
   );

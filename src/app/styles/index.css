@@ -20,7 +20,7 @@
     }
 
     .baseBtn {
-        @apply dark:text-darkText text-lightText rounded-3xl p-3 transition-colors  disabled:opacity-75
+        @apply dark:text-darkText text-lightText rounded-3xl p-3 transition-colors  disabled:opacity-75 disabled:cursor-not-allowed
          font-quicksandRegular text-sm flex gap-2 items-center;
     }
 
