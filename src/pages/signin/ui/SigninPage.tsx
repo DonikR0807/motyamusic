@@ -66,7 +66,7 @@ export const SigninPage = () => {
         <Button
           disabled={!isValid}
           variant="contained"
-          text="Sign Up"
+          text="Sign In"
           className="w-full justify-center p-6 text-xl"
         ></Button>
       </form>
