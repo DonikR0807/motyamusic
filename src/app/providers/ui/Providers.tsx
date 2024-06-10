@@ -1,10 +1,14 @@
+import { Provider } from 'react-redux';
 import { AppRouter } from '../../router';
 import { ThemeProvider } from '../themeProvider/ThemeProvider';
+import { store } from '../../../shared/config/store';
 
 export const Providers = () => {
   return (
-    <ThemeProvider>
-      <AppRouter></AppRouter>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider>
+        <AppRouter></AppRouter>
+      </ThemeProvider>
+    </Provider>
   );
 };

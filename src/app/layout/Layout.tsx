@@ -8,7 +8,7 @@ export const Layout = () => {
       <div className="mx-auto box-border max-w-screen-2xl">
         <Header></Header>
         <main className="flex gap-9 mt-10 pt-12">
-          <div className="w-[62px]">
+          <div className="w-[62px] mt-12">
             <Navigation></Navigation>
           </div>
           <div className="grow">

@@ -15,7 +15,8 @@ export default {
         lightText: '#000000',
         lightAltText: '#03080a', 
         yellowPrimary: '#FACD66',
-        altText: '#A4C7C6',
+        darkSecondaryText: '#A4C7C6',
+        lightSecondaryText: '#095ba4',
       },
       fontFamily: {
         quicksandRegular: [

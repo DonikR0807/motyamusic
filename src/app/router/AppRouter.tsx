@@ -5,7 +5,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import { AppRoutes, RoutePath } from '../../shared/lib';
+import { AppRoutes, RoutePath } from '../../shared/config';
 import { MainPage } from '../../pages/main/ui/MainPage';
 import { PlaylistPage } from '../../pages/playlist';
 import { ProfilePage } from '../../pages/profile';

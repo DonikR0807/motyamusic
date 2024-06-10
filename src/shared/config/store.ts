@@ -7,7 +7,9 @@ export const store = configureStore({
     [musicApi.reducerPath]: musicApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(musicApi.middleware),
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }).concat(musicApi.middleware),
 })
 
 setupListeners(store.dispatch)
