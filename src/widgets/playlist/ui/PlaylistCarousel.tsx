@@ -1,6 +1,6 @@
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { useGetPlaylistsQuery } from '../../../entities/playlist/api/getPlaylists';
+import { useGetAllPlaylistsQuery } from '../../../entities/playlist';
 import { PlayListSlide } from '../../../entities/playlist';
 import { Button } from '../../../shared/ui';
 import PrevIcon from '../../../shared/assets/images/prev.svg?react';
@@ -9,7 +9,7 @@ import Autoplay from 'embla-carousel-autoplay';
 
 export const PlaylistCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-  const { data } = useGetPlaylistsQuery();
+  const { data } = useGetAllPlaylistsQuery();
 
   const scrollPrev = React.useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();

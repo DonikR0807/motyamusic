@@ -1,11 +1,15 @@
-import React from 'react'
-import { SongInfo } from '../../../entities/song'
-import { LikeSongBtn } from '../../../features/addToFavourite'
+import { SongInfo } from '../../../entities/song';
+import { LikeSongBtn } from '../../../features/addToFavourite';
+import { Song } from '../../../entities/song';
 
-export const SongCard = () => {
-  return (
-    <SongInfo>
-        <LikeSongBtn></LikeSongBtn>
-    </SongInfo>
-  )
+interface SongsCardProps {
+  song: Song;
 }
+
+export const SongCard = ({ song }: SongsCardProps) => {
+  return (
+    <SongInfo {...song}>
+      <LikeSongBtn></LikeSongBtn>
+    </SongInfo>
+  );
+};

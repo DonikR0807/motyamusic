@@ -1,5 +1,4 @@
 import { PlaylistCarousel } from '../../../widgets/playlist/ui/PlaylistCarousel';
-import { SongList } from '../../../widgets/song/ui/SongList';
 
 export const MainPage = () => {
   return (
@@ -10,7 +9,7 @@ export const MainPage = () => {
       </section>
       <section className='mt-6'>
         <h2 className='sectionHeader'>Newest Songs</h2>
-        <SongList></SongList>
+        {/* <SongList></SongList> */}
       </section>
     </div>
   );

@@ -1,19 +1,19 @@
 import {
   DocumentData,
   QueryDocumentSnapshot,
-  collection,
-  getDocs,
+  doc,
+  getDoc,
 } from 'firebase/firestore';
-import { db, musicApi, storage } from '../../../shared/config';
 import { Playlist } from '../types/Playlist';
 import { isPlaylist } from '../utils/isPlaylist';
 import { getDownloadURL, ref } from 'firebase/storage';
+import { db, musicApi, storage } from '../../../shared/config';
 
-async function getPlaylist(
+export async function getPlaylist(
   docSnapshot: QueryDocumentSnapshot<DocumentData, DocumentData>,
 ): Promise<Playlist> {
   if (!docSnapshot.exists()) {
-    throw new Error("Документа не существует");
+    throw new Error('Документа не существует');
   }
 
   const doc = docSnapshot.data();
@@ -29,12 +29,19 @@ async function getPlaylist(
 
 const extendedApi = musicApi.injectEndpoints({
   endpoints: (build) => ({
-    getPlaylists: build.query<Playlist[], void>({
-      queryFn: async () => {
+    getPlaylist: build.query<Playlist, string>({
+      queryFn: async (playlistId) => {
         try {
-          const querySnapshot = await getDocs(collection(db, 'playlists'));
-          const playlists: Playlist[] = await Promise.all(querySnapshot.docs.map(getPlaylist));
-          return { data: playlists };
+          const docRef = doc(db, 'playlists', playlistId);
+          const docSnap = await getDoc(docRef);
+
+          if (!docSnap.exists()) {
+            throw new Error('Документа не существует');
+          }
+
+          const playlist: Playlist = await getPlaylist(docSnap);
+
+          return { data: playlist };
         } catch (error) {
           return { error };
         }
@@ -44,4 +51,4 @@ const extendedApi = musicApi.injectEndpoints({
   overrideExisting: false,
 });
 
-export const { useGetPlaylistsQuery } = extendedApi;
+export const { useGetPlaylistQuery } = extendedApi;
