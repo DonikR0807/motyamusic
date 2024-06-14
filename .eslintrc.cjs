@@ -8,11 +8,14 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'fsd-import'],
   rules: {
+    'fsd-import/fsd-relative-path': 'error',
+    'fsd-import/public-api-imports': 'error',
+    'fsd-import/layer-imports': 'error',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
     ],
   },
-}
+};

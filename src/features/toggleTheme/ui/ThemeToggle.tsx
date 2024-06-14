@@ -1,7 +1,7 @@
-import { Theme, useTheme } from '../../../shared/lib';
-import SunIcon from '../../../shared/assets/images/sun.svg?react';
-import MoonIcon from '../../../shared/assets/images/moon.svg?react';
-import { Button } from '../../../shared/ui';
+import { Theme, useTheme } from 'src/shared/lib';
+import SunIcon from 'src/shared/assets/images/sun.svg?react';
+import MoonIcon from 'src/shared/assets/images/moon.svg?react';
+import { Button } from 'src/shared/ui';
 
 export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();

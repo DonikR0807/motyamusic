@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import HomeIcon from '../../../shared/assets/images/home.svg?react';
-import PlaylistIcon from '../../../shared/assets/images/playlist.svg?react';
-import LikeIcon from '../../../shared/assets/images/like.svg?react';
-import UserIcon from '../../../shared/assets/images/user.svg?react';
-import LogoutIcon from '../../../shared/assets/images/logout.svg?react';
+import HomeIcon from 'src/shared/assets/images/home.svg?react';
+import PlaylistIcon from 'src/shared/assets/images/playlist.svg?react';
+import LikeIcon from 'src/shared/assets/images/like.svg?react';
+import UserIcon from 'src/shared/assets/images/user.svg?react';
+import LogoutIcon from 'src/shared/assets/images/logout.svg?react';
 
 export const Navigation = () => {
   return (

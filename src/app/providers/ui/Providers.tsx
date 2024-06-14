@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux';
 import { AppRouter } from '../../router';
 import { ThemeProvider } from '../themeProvider/ThemeProvider';
-import { store } from '../../../shared/config/store';
+import { store } from 'src/shared/config/store';
 
 export const Providers = () => {
   return (

@@ -1,4 +1,4 @@
-import { PlaylistCarousel } from '../../../widgets/playlist/ui/PlaylistCarousel';
+import { PlaylistCarousel } from 'src/widgets/playlist';
 
 export const MainPage = () => {
   return (

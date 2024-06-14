@@ -1,8 +1,8 @@
-import { PlayListInfo, useGetPlaylistQuery } from '../../../entities/playlist';
-import { AddToCollectionBtn } from '../../../features/addToCollection';
-import { PlayAllSongsBtn } from '../../../features/playAllSongs';
+import { PlayListInfo, useGetPlaylistQuery } from 'src/entities/playlist';
+import { AddToCollectionBtn } from 'src/features/addToCollection';
+import { PlayAllSongsBtn } from 'src/features/playAllSongs';
 import { useParams } from 'react-router-dom';
-import { ConditionalRender } from '../../../shared/ui';
+import { ConditionalRender } from 'src/shared/ui';
 
 export const PlayListSection = () => {
   const { playlistId } = useParams<'playlistId'>();

@@ -1,7 +1,7 @@
 import { SongCard } from './SongCard';
-import { useGetSongsOfPlaylistQuery } from '../../../entities/song/api/loadSongsOfPlaylist';
+import { useGetSongsOfPlaylistQuery } from 'src/entities/song/api/loadSongsOfPlaylist';
 import { useParams } from 'react-router-dom';
-import { ConditionalRender } from '../../../shared/ui';
+import { ConditionalRender } from 'src/shared/ui';
 
 export const SongsOfPlaylist = () => {
   const { playlistId } = useParams<'playlistId'>();

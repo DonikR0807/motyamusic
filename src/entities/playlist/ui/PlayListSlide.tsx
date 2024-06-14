@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Playlist } from '../types/Playlist';
-import { formatDate } from '../../../shared/ui';
+import { formatDate } from 'src/shared/ui';
 
 export const PlayListSlide = ({
   img,

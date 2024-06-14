@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import sad from '../../../shared/assets/images/sad.jpg';
+import sad from 'src/shared/assets/images/sad.jpg';
 
 export const PlayListCard = () => {
   return (

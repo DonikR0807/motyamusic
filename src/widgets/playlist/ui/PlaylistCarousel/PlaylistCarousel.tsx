@@ -1,10 +1,10 @@
 import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { useGetAllPlaylistsQuery } from '../../../entities/playlist';
-import { PlayListSlide } from '../../../entities/playlist';
-import { Button } from '../../../shared/ui';
-import PrevIcon from '../../../shared/assets/images/prev.svg?react';
-import NextIcon from '../../../shared/assets/images/next.svg?react';
+import { useGetAllPlaylistsQuery } from 'src/entities/playlist';
+import { PlayListSlide } from 'src/entities/playlist';
+import { Button } from 'src/shared/ui';
+import PrevIcon from 'src/shared/assets/images/prev.svg?react';
+import NextIcon from 'src/shared/assets/images/next.svg?react';
 import Autoplay from 'embla-carousel-autoplay';
 
 export const PlaylistCarousel = () => {

@@ -1,6 +1,6 @@
-import { SongInfo } from '../../../entities/song';
-import { LikeSongBtn } from '../../../features/addToFavourite';
-import { Song } from '../../../entities/song';
+import { SongInfo } from 'src/entities/song';
+import { LikeSongBtn } from 'src/features/addToFavourite';
+import { Song } from 'src/entities/song';
 
 interface SongsCardProps {
   song: Song;

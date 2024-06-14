@@ -5,16 +5,16 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import { AppRoutes, RoutePath } from '../../shared/config';
-import { MainPage } from '../../pages/main/ui/MainPage';
-import { PlaylistPage } from '../../pages/playlist';
-import { ProfilePage } from '../../pages/profile';
-import { SigninPage } from '../../pages/signin';
-import { SignupPage } from '../../pages/signup';
-import { NotFoundPage } from '../../pages/notFound';
+import { AppRoutes, RoutePath } from 'src/shared/config';
+import { MainPage } from 'src/pages/main/ui/MainPage';
+import { PlaylistPage } from 'src/pages/playlist';
+import { ProfilePage } from 'src/pages/profile';
+import { SigninPage } from 'src/pages/signin';
+import { SignupPage } from 'src/pages/signup';
+import { NotFoundPage } from 'src/pages/notFound';
 import { Layout } from '../layout/Layout';
-import { PlayListsPage } from '../../pages/playlists';
-import { LikedPage } from '../../pages/liked';
+import { PlayListsPage } from 'src/pages/playlists';
+import { LikedPage } from 'src/pages/liked';
 
 const routeConfig: Record<AppRoutes, RouteObject> = {
   [AppRoutes.MAIN]: {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../../../shared/ui';
-import AddIcon from '../../../shared/assets/images/playlist.svg?react';
+import { Button } from 'src/shared/ui';
+import AddIcon from 'src/shared/assets/images/playlist.svg?react';
 
 export const AddToCollectionBtn = () => {
   return (

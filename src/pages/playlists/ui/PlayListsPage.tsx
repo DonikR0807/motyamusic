@@ -1,5 +1,5 @@
 import React from 'react';
-import { PlayListCard } from '../../../entities/playlist';
+import { PlayListCard } from 'src/entities/playlist';
 
 export const PlayListsPage = () => {
   return (

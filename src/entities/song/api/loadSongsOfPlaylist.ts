@@ -1,5 +1,5 @@
 import { collection, getDocs } from 'firebase/firestore';
-import { db, musicApi } from '../../../shared/config';
+import { db, musicApi } from 'src/shared/config';
 import { Song } from '../types/Song';
 import { loadSong } from './loadSong';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Playlist } from '../types/Playlist';
-import { formatDate } from '../../../shared/ui';
+import { formatDate } from 'src/shared/ui';
 
 type PlayListInfoProps = {
   data: Playlist | undefined;

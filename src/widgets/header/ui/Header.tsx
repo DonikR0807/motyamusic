@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from '../../../shared/assets/images/logo.svg?url';
-import { Search } from '../../../features/search';
-import { ThemeToggle } from '../../../features/toggleTheme';
+import logo from 'src/shared/assets/images/logo.svg?url';
+import { Search } from 'src/features/search';
+import { ThemeToggle } from 'src/features/toggleTheme';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Song } from '../types/Song';
-import { formatDuration } from '../../../shared/ui';
+import { formatDuration } from 'src/shared/ui';
 
 interface SongInfoProps extends Song {
   children?: React.ReactNode;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../../../shared/ui';
-import PlayIcon from '../../../shared/assets/images/playIcon.svg?react';
+import { Button } from 'src/shared/ui';
+import PlayIcon from 'src/shared/assets/images/playIcon.svg?react';
 
 export const PlayAllSongsBtn = () => {
   return (

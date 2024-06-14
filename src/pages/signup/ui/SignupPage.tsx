@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { Button, Input } from '../../../shared/ui';
+import { Button, Input } from 'src/shared/ui';
 import { Link } from 'react-router-dom';
 import isEmail from 'validator/es/lib/isEmail';
 
@@ -44,7 +44,7 @@ export const SignupPage = () => {
               return isEmail(v) || 'Email is invalid';
             },
           })}
-          placeholder="Example@mail.com"
+          placeholder="Examplesrcmail.com"
           error={errors.email?.message}
         ></Input>
         <Input

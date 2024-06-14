@@ -1,5 +1,5 @@
-import LikeIcon from '../../../shared/assets/images/like.svg?react';
-import { Button } from '../../../shared/ui';
+import LikeIcon from 'src/shared/assets/images/like.svg?react';
+import { Button } from 'src/shared/ui';
 
 export const LikeSongBtn = () => {
   return (

@@ -1,7 +1,7 @@
 import { DocumentData, QueryDocumentSnapshot } from 'firebase/firestore';
 import { isSong } from '../utils/isSong';
 import { getDownloadURL, ref } from 'firebase/storage';
-import { storage } from '../../../shared/config';
+import { storage } from 'src/shared/config';
 import { Song } from '../types/Song';
 
 export const loadSong = async (

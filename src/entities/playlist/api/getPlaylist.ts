@@ -7,7 +7,7 @@ import {
 import { Playlist } from '../types/Playlist';
 import { isPlaylist } from '../utils/isPlaylist';
 import { getDownloadURL, ref } from 'firebase/storage';
-import { db, musicApi, storage } from '../../../shared/config';
+import { db, musicApi, storage } from 'src/shared/config';
 
 export async function getPlaylist(
   docSnapshot: QueryDocumentSnapshot<DocumentData, DocumentData>,

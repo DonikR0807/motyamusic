@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { Theme, ThemeContext } from '../../../shared/lib';
-import { LOCAL_STORAGE_THEME_KEY } from '../../../shared/lib/theme/themeContext';
+import { Theme, ThemeContext } from 'src/shared/lib';
+import { LOCAL_STORAGE_THEME_KEY } from 'src/shared/lib/theme/themeContext';
 import clsx from 'clsx';
 
 interface ThemeProviderProps {

@@ -1,10 +1,10 @@
 import React from 'react';
-import { PlayListSection } from '../../../widgets/playlist/ui/PlayListSection';
-import { SongsOfPlaylist } from '../../../widgets/song';
+import { PlayListSection } from 'src/widgets/playlist/';
+import { SongsOfPlaylist } from 'src/widgets/song';
 
 export const PlaylistPage = () => {
   return (
-    <div>
+    <div className='mt-12'>
       <div className="mb-8">
         <PlayListSection></PlayListSection>
       </div>
