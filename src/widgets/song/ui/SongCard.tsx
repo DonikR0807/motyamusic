@@ -3,12 +3,13 @@ import { LikeSongBtn } from 'src/features/addToFavourite';
 import { Song } from 'src/entities/song';
 
 interface SongsCardProps {
-  song: Song;
+  data: Song | undefined;
+  isLoading?: boolean
 }
 
-export const SongCard = ({ song }: SongsCardProps) => {
+export const SongCard = ({ data, isLoading = false }: SongsCardProps) => {
   return (
-    <SongInfo {...song}>
+    <SongInfo data={data} isLoading={isLoading}>
       <LikeSongBtn></LikeSongBtn>
     </SongInfo>
   );

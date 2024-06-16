@@ -6,13 +6,15 @@ import { ConditionalRender } from 'src/shared/ui';
 
 export const PlayListSection = () => {
   const { playlistId } = useParams<'playlistId'>();
-  const { data, isFetching, isError, isSuccess } = useGetPlaylistQuery(
+  const { data, isLoading, isError, isSuccess } = useGetPlaylistQuery(
     playlistId as string,
   );
-  
+
+  console.log(data, isLoading);
+
   return (
     <ConditionalRender
-      isLoading={isFetching}
+      isLoading={isLoading}
       isFailed={isError}
       isSuccess={isSuccess}
       renderOnSuccess={() => (
@@ -24,7 +26,7 @@ export const PlayListSection = () => {
         </div>
       )}
       renderOnFailed={() => <div>Ошибка</div>}
-      renderOnLoading={() => <div>Идет Загрузка</div>}
+      renderOnLoading={() => <PlayListInfo data={undefined} isLoading={isLoading}></PlayListInfo>}
     ></ConditionalRender>
   );
 };

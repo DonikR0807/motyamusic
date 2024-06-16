@@ -5,25 +5,31 @@ import { ConditionalRender } from 'src/shared/ui';
 
 export const SongsOfPlaylist = () => {
   const { playlistId } = useParams<'playlistId'>();
-  const { data, isFetching, isError, isSuccess } = useGetSongsOfPlaylistQuery(
+  const { data, isLoading, isError, isSuccess } = useGetSongsOfPlaylistQuery(
     playlistId as string,
   );
   return (
     <ConditionalRender
       isFailed={isError}
-      isLoading={isFetching}
+      isLoading={isLoading}
       isSuccess={isSuccess}
       renderOnSuccess={() => (
         <ul className="flex flex-col gap-5">
           {data?.map((song) => (
             <li key={song.id}>
-              <SongCard song={song}></SongCard>
+              <SongCard data={song}></SongCard>
             </li>
           ))}
         </ul>
       )}
       renderOnFailed={() => <div>failed to load</div>}
-      renderOnLoading={() => <div>loading</div>}
+      renderOnLoading={() => <ul className="flex flex-col gap-5">
+        {[...new Array(8)].map((_, index) => (
+          <li key={index}>
+            <SongCard data={undefined} isLoading={true}></SongCard>
+          </li>
+        ))}
+      </ul>}
     ></ConditionalRender>
   );
 };
