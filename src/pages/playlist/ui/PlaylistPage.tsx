@@ -1,4 +1,3 @@
-import React from 'react';
 import { PlayListSection } from 'src/widgets/playlist/';
 import { SongsOfPlaylist } from 'src/widgets/song';
 

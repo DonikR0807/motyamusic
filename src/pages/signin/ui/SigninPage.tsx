@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, Input } from 'src/shared/ui';
 import { Link } from 'react-router-dom';
 import isEmail from 'validator/lib/isEmail';

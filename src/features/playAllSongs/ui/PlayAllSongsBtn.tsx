@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from 'src/shared/ui';
 import PlayIcon from 'src/shared/assets/images/playIcon.svg?react';
 

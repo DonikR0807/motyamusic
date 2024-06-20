@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from 'src/shared/ui';
 import AddIcon from 'src/shared/assets/images/playlist.svg?react';
 

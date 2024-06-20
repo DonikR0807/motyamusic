@@ -10,8 +10,6 @@ export const PlayListSection = () => {
     playlistId as string,
   );
 
-  console.log(data, isLoading);
-
   return (
     <ConditionalRender
       isLoading={isLoading}
